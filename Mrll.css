@@ -3,6 +3,23 @@
   margin:10px auto;
   background:#FFF;
   box-shadow: 10px 10px 10px 10px #DDD;
+  border-radius: 1%;
+}
+/* 版面頭尾圓角 */
+
+.radiusStart{
+  border-top-left-radius: 1%;
+  border-top-right-radius: 1%;
+}
+
+.radiusEnd{
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
+}
+/* 版面頭尾圓角結束 */
+.welcome img{
+  max-height: 100vh;
+  object-fit: cover;
 }
 .titleImg{
   position: relative;
@@ -15,12 +32,16 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  opacity: 0.5;
+  filter:grayscale(100%);
 }
 .titleText{
   position: absolute;
   display: flex;
   /* height: 100%; */
+  top: 20%;
   left: 15%;
+  right: 15%;
   justify-content: center;
   flex-direction: column;
 }
@@ -28,3 +49,128 @@
   color: #eee;
   text-shadow: 1px 1px 5px #ccc;
 }
+
+/* 拖曳桿圖片 */
+.ba-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.ba-slider img {
+  width: 100%;
+  display:block;
+}
+
+.resize {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+
+.handle {
+position:absolute; 
+left:50%;
+top:0;
+bottom:0;
+width:4px;
+margin-left:-2px;
+
+background: rgba(0,0,0,.5);
+cursor: ew-resize;
+}
+
+.handle:after {  /* 靜態按鈕 */
+  position: absolute;
+  top: 35%;
+  width: 30px;
+  height: 30px;
+  margin: -15px 0 0 -15px;
+  content:'click';
+  color:white;
+  font-weight:bold;
+  font-size:4px;
+  text-align:center;
+  line-height:30px;
+  opacity: 0.9;
+
+  background: #aa0000; 
+  border-radius: 50%;
+  transition:all 0.3s ease;
+  box-shadow:
+    0 2px 6px rgba(0,0,0,.3), 
+    inset 0 2px 0 rgba(255,255,255,.5),
+    inset 0 60px 50px -30px #ffc4c4;  
+}
+/* 按下去產生的class */
+.draggable:after {
+  /* width: 48px;
+  height: 48px;
+  margin: -24px 0 0 -24px; */
+  content:none;
+  }
+/* 拖曳桿圖片結束 */
+
+/* 回頂端按鈕 */
+#mrllArrow{
+  opacity: 0;
+  right: 5vh;
+  bottom: 5vh;
+  z-index: 999;
+}
+
+
+#mrllArrow i{
+  width: 2rem;
+  font-size: 2rem;
+  vertical-align: -25%;
+}
+
+#mrllArrow > a {
+  animation: lokijump 2s ease infinite;
+}
+@keyframes lokijump {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate(0, 0);
+  }
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate(0, -30px);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate(0, -15px);
+  }
+  90% {
+    transform: translate(0, -4px);
+  }
+}
+
+.load{opacity: 1;position:absolute;right: -2.5vh;bottom:-2.5vh;transform:translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width:100px;
+  height:100px;
+}
+.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+
+.load :first-child{background:#19A68C;animation-delay:-1.5s}
+.load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+.load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+.load :last-child{background:#193B48}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
+}
+/* 回頂端按鈕結束 */
