@@ -19,14 +19,24 @@
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous"></script>
   <script src="Mrll.json"></script>
-
+  <!-- 網站圖示 -->
+  <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+  
 </head>
 
 <body>
+      <!-- navlink構想，飯店範本 -->
+    <nav class="nav flex-column nav-pills position-fixed" id="MrllNav">
+      <a class="text-dark bg-danger nav-link active" aria-current="page" href="#"><i class="fas fa-child"></i></a>
+      <a class="text-dark bg-danger nav-link" href="#"><i class="fas fa-book"></i></a>
+      <a class="text-dark bg-danger nav-link" href="#"><i class="fas fa-coins"></i></a>
+      <a class="text-dark bg-danger nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-diagnoses"></i></a>
+    </nav>
   <!-- 90%版面大小旁留白 -->
   <div class="bodyBg">
     <!-- 首頁大圖 ，有時間改為滿版滾動後縮80%-->
     <section class="welcome">
+      <i class="fi-rr-following"></i>
       <div class="ba-slider radiusStart">
         <img src="https://picsum.photos/1920/1080/?random=2" alt="">
         <div class="resize">
@@ -35,7 +45,7 @@
         <span class="handle"></span>
       </div>
     </section>
-    <!-- 第二區 -->
+    <!-- 第二區:關於我 -->
     <section class="carousel-inner  radiusEnd">
       <div class="titleImg carousel-item vh-100 resumeEnd">
         <img class="p-0" src="https://picsum.photos/1920/1080/?random=1">
@@ -49,12 +59,13 @@
     </section>
 
 
+
     <!-- 回頂動畫按鈕 -->
     <div class="backTopBotton" onmouseover="mouseIn()" onmouseleave="reBtn()">
       <div id="mrllArrow" class="position-fixed">
         <a href="#" class="btn btn-info rounded-circle p-2 border-0">
-          <!-- <i class="far fa-caret-square-up"></i> -->
-          <i class="far fa-hand-point-up"></i>
+          <!-- <i class="far fa-hand-point-up"></i> -->
+          <i class="fas fa-house-user"></i>
         </a>
       </div>
       <div id="arrow" class="load position-fixed btn">
@@ -73,7 +84,8 @@
         topBack.style.opacity = 0
       };
       function mouseIn() {
-      (topRun.style.opacity == 1) ? (topRun.style.opacity = 0, topBack.style.opacity = 1) :"";
+        topRun.style.opacity = 0; topBack.style.opacity = 1;
+      // (topRun.style.opacity == 1) ? (topRun.style.opacity = 0, topBack.style.opacity = 1) :"";
     }
     // 主區圖片拖曳效果
     $(document).ready(function () {

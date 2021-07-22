@@ -8,6 +8,25 @@ body{
   box-shadow: 10px 10px 10px 10px #DDD;
   border-radius: 1%;
 }
+/* navlink設定 */
+#MrllNav{
+  /* width: 5%;
+  height: 5%; */
+  /* position: absolute; */
+  /* flex-wrap: wrap; */
+  right: 92.5%;
+  /* margin-top: auto;
+  margin-bottom: auto; */
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+}
+/* navlink設定結束 */
+
+
+
+
+
 /* 版面頭尾圓角 */
 
 .radiusStart{
@@ -131,12 +150,12 @@ cursor: ew-resize;
 
 #mrllArrow i{
   width: 2rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   vertical-align: -25%;
 }
 
 #mrllArrow > a {
-  animation: lokijump 2s ease infinite;
+  animation: lokijump 1.5s ease infinite;
 }
 @keyframes lokijump {
   0%,
@@ -172,6 +191,7 @@ cursor: ew-resize;
 .load :nth-child(2){background:#F63D3A;animation-delay:-1s}
 .load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
 .load :last-child{background:#193B48}
+.load hr:hover{animation:spin 0.5s ease-in infinite}
 
 @keyframes spin{
   0%,100%{transform:translate(0)}
