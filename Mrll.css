@@ -1,3 +1,6 @@
+body{
+  min-width: 375px;
+}
 .bodyBg{
   width:85%;
   margin:10px auto;
@@ -114,13 +117,17 @@ cursor: ew-resize;
 /* 拖曳桿圖片結束 */
 
 /* 回頂端按鈕 */
+.backTopBotton{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+}
 #mrllArrow{
   opacity: 0;
   right: 5vh;
   bottom: 5vh;
   z-index: 999;
 }
-
 
 #mrllArrow i{
   width: 2rem;
@@ -160,8 +167,7 @@ cursor: ew-resize;
   width:100px;
   height:100px;
 }
-.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
-
+.load hr{border:0;margin:0;width:30%;height:30%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
 .load :first-child{background:#19A68C;animation-delay:-1.5s}
 .load :nth-child(2){background:#F63D3A;animation-delay:-1s}
 .load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
