@@ -27,17 +27,17 @@
 <body>
       <!-- navlink構想，飯店範本 -->
     <nav class="nav flex-column nav-pills position-fixed" id="MrllNav">
-      <a class="text-dark bg-danger nav-link active" aria-current="page" href="#"><i class="fas fa-child"></i></a>
-      <a class="text-dark bg-danger nav-link" href="#"><i class="fas fa-book"></i></a>
-      <a class="text-dark bg-danger nav-link" href="#"><i class="fas fa-coins"></i></a>
-      <a class="text-dark bg-danger nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-diagnoses"></i></a>
+      <a class="rounded-0 text-dark bg-danger nav-link active" aria-current="page" href="#"><i class="fas fa-child"></i></a>
+      <a class="rounded-0 text-dark bg-danger nav-link" href="#"><i class="fas fa-book"></i></a>
+      <a class="rounded-0 text-dark bg-danger nav-link" href="#"><i class="fas fa-coins"></i></a>
+      <a class="rounded-0 text-dark bg-danger nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-diagnoses"></i></a>
     </nav>
   <!-- 90%版面大小旁留白 -->
   <div class="bodyBg">
-    <!-- 首頁大圖 ，有時間改為滿版滾動後縮80%-->
+    <!-- 第一區:首頁大圖，有時間改為滿版滾動後縮80%-->
     <section class="welcome">
       <i class="fi-rr-following"></i>
-      <div class="ba-slider radiusStart">
+      <div class="ba-slider rounded-top">
         <img src="https://picsum.photos/1920/1080/?random=2" alt="">
         <div class="resize">
           <img src="https://picsum.photos/1920/1080/?random=3" alt="">
@@ -45,21 +45,30 @@
         <span class="handle"></span>
       </div>
     </section>
-    <!-- 第二區:關於我 -->
-    <section class="carousel-inner  radiusEnd">
+    <!-- 第二區:關於我；技能 -->
+    <section class="carousel-inner">
       <div class="titleImg carousel-item vh-100 resumeEnd">
         <img class="p-0" src="https://picsum.photos/1920/1080/?random=1">
-        <div class="titleText">
-          <h1>關於我</h1>
-          <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum rem cupiditate voluptatem odio alias quos
+        <div class="titleText container">
+          <div class="row p-5"></div>
+          <h1 class="col offset-md-2">關於我</h1>
+          <div class="col-lg-4 col-md-6 offset-md-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum rem cupiditate voluptatem odio alias quos
             ullam omnis sapiente voluptatibus dolores deserunt quia fugit, reiciendis possimus mollitia repudiandae
             obcaecati libero? Quasi?</div>
         </div>
       </div>
     </section>
+    <!-- 第四區:學經歷； -->
+    <!-- 第三區:求職目標；期許 -->
+    <!-- 第五區:作品集 -->
 
 
-
+    <!-- 頁尾版權保護 -->
+    <footer class="bg-dark text-muted text-center py-3 rounded-bottom">
+      <div class="m-0 p-0">
+      <p class="text-light">© Copyright 2021 Oscar - All Rights Reserved</p>
+    </div>
+    </footer>
     <!-- 回頂動畫按鈕 -->
     <div class="backTopBotton" onmouseover="mouseIn()" onmouseleave="reBtn()">
       <div id="mrllArrow" class="position-fixed">

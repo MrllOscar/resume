@@ -26,18 +26,6 @@ body{
 
 
 
-
-/* 版面頭尾圓角 */
-
-.radiusStart{
-  border-top-left-radius: 1%;
-  border-top-right-radius: 1%;
-}
-
-.radiusEnd{
-  border-bottom-left-radius: 1%;
-  border-bottom-right-radius: 1%;
-}
 /* 版面頭尾圓角結束 */
 .welcome img{
   max-height: 100vh;
@@ -61,9 +49,9 @@ body{
   position: absolute;
   display: flex;
   /* height: 100%; */
-  top: 20%;
-  left: 15%;
-  right: 15%;
+  /* top: 20%; */
+  /* left: 15%;
+  right: 15%; */
   justify-content: center;
   flex-direction: column;
 }
@@ -137,9 +125,9 @@ cursor: ew-resize;
 
 /* 回頂端按鈕 */
 .backTopBotton{
-  position: absolute;
-  width: 15px;
-  height: 15px;
+  position: fixed;
+  right: 5vh;
+  bottom: 5vh;
 }
 #mrllArrow{
   opacity: 0;
