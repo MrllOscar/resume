@@ -8,21 +8,32 @@ body{
   box-shadow: 10px 10px 10px 10px #DDD;
   border-radius: 1%;
 }
+
+
+
 /* navlink設定 */
-#MrllNav{
-  /* width: 5%;
-  height: 5%; */
-  /* position: absolute; */
-  /* flex-wrap: wrap; */
+.MrllNav{
   right: 92.5%;
-  /* margin-top: auto;
-  margin-bottom: auto; */
   top: 0;
   bottom: 0;
+  margin: 0%;
   justify-content: center;
 }
 /* navlink設定結束 */
 
+@media (max-width: 576px) {
+  .bodyBg {
+    width: 100%;
+    margin: 0;
+  }
+  .MrllNav{
+    right: auto;
+    top: 0;
+    justify-content: flex-end;
+    z-index: 5;
+    opacity: 0.5;
+  }
+}
 
 
 
@@ -191,6 +202,7 @@ cursor: ew-resize;
 
 /* 翻轉文字 */
 #flip {
+  min-height: 50px;
   max-height:50px;
   overflow: hidden;
 }

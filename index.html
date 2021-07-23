@@ -20,60 +20,95 @@
     crossorigin="anonymous"></script>
   <!-- 網站圖示 -->
   <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
-  
+
 </head>
 
 <body>
-      <!-- navlink構想，飯店範本 -->
-    <nav class="nav flex-column nav-pills position-fixed" id="MrllNav">
-      <a class="rounded-0 text-dark bg-danger nav-link active" aria-current="page" href="#"><i class="fas fa-child"></i></a>
-      <a class="rounded-0 text-dark bg-danger nav-link" href="#"><i class="fas fa-book"></i></a>
-      <a class="rounded-0 text-dark bg-danger nav-link" href="#"><i class="fas fa-coins"></i></a>
-      <a class="rounded-0 text-dark bg-danger nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-diagnoses"></i></a>
-    </nav>
   <!-- 90%版面大小旁留白 -->
   <div class="bodyBg">
     <!-- 第一區:首頁大圖，有時間改為滿版滾動後縮80%-->
     <section class="welcome">
       <i class="fi-rr-following"></i>
       <div class="ba-slider rounded-top">
-        <img src="https://picsum.photos/1920/1080/?random=2" alt="">
+        <img src="./media/after.jpg" alt="">
         <div class="resize">
-          <img src="https://picsum.photos/1920/1080/?random=3" alt="">
+          <img src="./media/before.jpg" alt="">
         </div>
         <span class="handle"></span>
       </div>
     </section>
-    <!-- 第二區:關於我；技能 -->
-    <section class="carousel-inner">
-      <div class="titleImg carousel-item vh-100 resumeEnd">
-        <img class="p-0" src="https://picsum.photos/1920/1080/?random=1">
-        <div class="titleText container">
-          <div class="row p-5"></div>
-          <div id="flip" class=" h1 col offset-md-2">
-            <div><div>我的履歷</div></div>
-            <div><div>歡迎來到</div></div>
-            <div><div>你好！</div></div>
-          </div>
-          <div class="col-lg-4 col-md-6 offset-md-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum rem cupiditate voluptatem odio alias quos
-            ullam omnis sapiente voluptatibus dolores deserunt quia fugit, reiciendis possimus mollitia repudiandae
-            obcaecati libero? Quasi?</div>
+    <!-- navlink構想，飯店範本 -->
+    <div class="d-flex align-items-start">
+      <div class="nav flex-column nav-pills position-fixed MrllNav p-0" id="v-pills-tab" role="tablist"
+        aria-orientation="vertical">
+        <button class="rounded-0 text-dark bg-danger nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"
+          title="關於我"><i class="fas fa-child"></i></button>
+        <button class="rounded-0 text-dark bg-danger nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
+          aria-selected="false" title="工作經歷"><i class="fas fa-book"></i></button>
+        <button class="rounded-0 text-dark bg-danger nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
+          aria-selected="false" title="求職目標"><i class="fas fa-coins"></i></button>
+        <button class="rounded-0 text-dark bg-danger nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
+          aria-selected="false" title="作品集"><i class="fas fa-diagnoses"></i></button>
+        <button class="rounded-0 text-dark bg-danger nav-link" title="後台登入"><i class="fas fa-fingerprint"></i></button>
+      </div>
+      <div class="tab-content" id="v-pills-tabContent">
+        <!-- 第二區:關於我；技能 -->
+        <div class="tab-pane fade show active vh-100" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          <section class="carousel-inner">
+            <div class="titleImg carousel-item vh-100 resumeEnd">
+              <img class="p-0" src="https://picsum.photos/1920/1080/?random=1">
+              <div class="titleText container">
+                <div class="row p-5"></div>
+                <div id="flip" class=" h1 col offset-md-2">
+                  <div>
+                    <div>我的履歷</div>
+                  </div>
+                  <div>
+                    <div>歡迎來到</div>
+                  </div>
+                  <div>
+                    <div>你好！</div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 offset-md-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                  rem cupiditate voluptatem odio alias quos
+                  ullam omnis sapiente voluptatibus dolores deserunt quia fugit, reiciendis possimus mollitia
+                  repudiandae
+                  obcaecati libero? Quasi?</div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- 第三區:學經歷； -->
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+
+        </div>
+        <!-- 第四區:求職目標；期許 -->
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+        </div>
+        <!-- 第五區:作品集 -->
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+
         </div>
       </div>
-    </section>
-    <!-- 第四區:學經歷； -->
+    </div>
+
     <section>
 
     </section>
-    <!-- 第三區:求職目標；期許 -->
-    <!-- 第五區:作品集 -->
+
 
 
     <!-- 頁尾版權保護 -->
     <footer class="bg-dark text-muted text-center py-3 rounded-bottom">
       <div class="m-0 p-0">
-      <p class="text-light">© Copyright 2021 Oscar - All Rights Reserved</p>
-    </div>
+        <p class="text-light">© Copyright 2021 Oscar - All Rights Reserved</p>
+      </div>
     </footer>
     <!-- 回頂動畫按鈕 -->
     <div class="backTopBotton" onmouseover="mouseIn()" onmouseleave="reBtn()">
