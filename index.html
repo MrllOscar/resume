@@ -18,7 +18,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous"></script>
-  <script src="Mrll.json"></script>
   <!-- 網站圖示 -->
   <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
   
@@ -51,7 +50,11 @@
         <img class="p-0" src="https://picsum.photos/1920/1080/?random=1">
         <div class="titleText container">
           <div class="row p-5"></div>
-          <h1 class="col offset-md-2">關於我</h1>
+          <div id="flip" class=" h1 col offset-md-2">
+            <div><div>我的履歷</div></div>
+            <div><div>歡迎來到</div></div>
+            <div><div>你好！</div></div>
+          </div>
           <div class="col-lg-4 col-md-6 offset-md-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum rem cupiditate voluptatem odio alias quos
             ullam omnis sapiente voluptatibus dolores deserunt quia fugit, reiciendis possimus mollitia repudiandae
             obcaecati libero? Quasi?</div>
@@ -59,6 +62,9 @@
       </div>
     </section>
     <!-- 第四區:學經歷； -->
+    <section>
+
+    </section>
     <!-- 第三區:求職目標；期許 -->
     <!-- 第五區:作品集 -->
 
@@ -85,83 +91,7 @@
       </div>
     </div>
   </div>
-  <script>
-    let topRun = document.querySelector("#arrow"),
-      topBack = document.querySelector("#mrllArrow"),
-      reBtn = function mouseIn(element) {
-        topRun.style.opacity = 1;
-        topBack.style.opacity = 0
-      };
-      function mouseIn() {
-        topRun.style.opacity = 0; topBack.style.opacity = 1;
-      // (topRun.style.opacity == 1) ? (topRun.style.opacity = 0, topBack.style.opacity = 1) :"";
-    }
-    // 主區圖片拖曳效果
-    $(document).ready(function () {
-      $('.ba-slider').each(function () {
-        var cur = $(this);
-        var width = cur.width() + 'px';
-        cur.find('.resize img').css('width', width);
-        drags(cur.find('.handle'), cur.find('.resize'), cur);
-      });
-    });
-
-    $(window).resize(function () {
-      $('.ba-slider').each(function () {
-        var cur = $(this);
-        var width = cur.width() + 'px';
-        cur.find('.resize img').css('width', width);
-      });
-    });
-
-    function drags(dragElement, resizeElement, container) {
-
-      dragElement.on('mousedown touchstart', function (e) {
-
-        dragElement.addClass('draggable');
-        resizeElement.addClass('resizable');
-
-        var startX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
-
-        var dragWidth = dragElement.outerWidth(),
-          posX = dragElement.offset().left + dragWidth - startX,
-          containerOffset = container.offset().left,
-          containerWidth = container.outerWidth();
-
-        minLeft = containerOffset + 10;
-        maxLeft = containerOffset + containerWidth - dragWidth - 10;
-
-        dragElement.parents().on("mousemove touchmove", function (e) {
-
-
-          var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
-
-          leftValue = moveX + posX - dragWidth;
-
-          if (leftValue < minLeft) {
-            leftValue = minLeft;
-          } else if (leftValue > maxLeft) {
-            leftValue = maxLeft;
-          }
-
-          widthValue = (leftValue + dragWidth / 2 - containerOffset) * 100 / containerWidth + '%';
-
-          $('.draggable').css('left', widthValue).on('mouseup touchend touchcancel', function () {
-            $(this).removeClass('draggable');
-            resizeElement.removeClass('resizable');
-          });
-          $('.resizable').css('width', widthValue);
-        }).on('mouseup touchend touchcancel', function () {
-          dragElement.removeClass('draggable');
-          resizeElement.removeClass('resizable');
-        });
-        e.preventDefault();
-      }).on('mouseup touchend touchcancel', function (e) {
-        dragElement.removeClass('draggable');
-        resizeElement.removeClass('resizable');
-      });
-    }
-  </script>
+  <script src="Mrll.js"></script>
 </body>
 
 </html>
