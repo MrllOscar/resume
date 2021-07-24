@@ -73,3 +73,11 @@ let topRun = document.querySelector("#arrow"),
         resizeElement.removeClass('resizable');
       });
     }
+
+
+    // 轉址
+    function to() {
+      document.location.href="login/login.html";
+    }
+
+    

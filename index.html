@@ -53,87 +53,114 @@
         <button class="rounded-0 text-dark bg-danger nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
           data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
           aria-selected="false" title="作品集"><i class="fas fa-diagnoses"></i></button>
-        <button class="rounded-0 text-dark bg-danger nav-link" title="後台登入"><i class="fas fa-fingerprint"></i></button>
+        <button class="rounded-0 text-dark bg-danger nav-link" onclick="to()" title="後台登入"><i
+            class="fas fa-fingerprint"></i></button>
       </div>
       <div class="tab-content" id="v-pills-tabContent">
         <!-- 第二區:關於我；技能 -->
-        <section class="tab-pane fade show active vh-100 carousel-inner" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-            <div class="titleImg carousel-item vh-100 resumeEnd">
-              <img class="p-0" src="https://picsum.photos/1920/1080/?random=1">
-              <div class="titleText container">
-                <div class="row p-5"></div>
-                <div id="flip" class=" h1 col offset-md-2">
-                  <div>
-                    <div>我的履歷</div>
-                  </div>
-                  <div>
-                    <div>歡迎來到</div>
-                  </div>
-                  <div>
-                    <div>你好！</div>
-                  </div>
+        <section class="tab-pane fade show active vh-100 carousel-inner" id="v-pills-home" role="tabpanel"
+          aria-labelledby="v-pills-home-tab">
+          <div class="titleImg carousel-item vh-100 resumeEnd">
+            <img class="p-0" src="https://picsum.photos/1920/1080/?random=1">
+            <div class="titleText container">
+              <div class="row p-5"></div>
+              <div id="flip" class=" h1 col offset-md-2">
+                <div>
+                  <div>我的履歷</div>
                 </div>
-                <div class="col-lg-4 col-md-6 offset-md-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-                  rem cupiditate voluptatem odio alias quos
-                  ullam omnis sapiente voluptatibus dolores deserunt quia fugit, reiciendis possimus mollitia
-                  repudiandae
-                  obcaecati libero? Quasi?</div>
+                <div>
+                  <div>歡迎來到</div>
+                </div>
+                <div>
+                  <div>你好！</div>
+                </div>
               </div>
+              <div class="col-lg-4 col-md-6 offset-md-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+                rem cupiditate voluptatem odio alias quos
+                ullam omnis sapiente voluptatibus dolores deserunt quia fugit, reiciendis possimus mollitia
+                repudiandae
+                obcaecati libero? Quasi?</div>
             </div>
-          </section>
+          </div>
+        </section>
         <!-- 第三區:學經歷； -->
         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-          3
+          <h1 class="slideTitle">經歷</h1>
+          <div class="slideBox">
+          <div class="slideText slideFirst">花錢去的大企業公司</div>
+          <div class="slideText slideLast">
+            <span class="slidespan"> 結果公司好血汗</span>
+          </div>
+        </div>
+        <div class="slideBox">
+          <div class="slideText slideFirst">花錢上的學校</div>
+          <div class="slideText slideLast">
+            <span class="slidespan"> 學校沒什麼名氣</span>
+          </div>
+        </div>
+        <div class="slideBox">
+          <div class="slideText slideFirst">花錢上去的國外公司</div>
+          <div class="slideText slideLast">
+            <span class="slidespan"> 結果也倒了</span>
+          </div>
+        </div>
+        <div class="slideBox">
+          <div class="slideText slideFirst">渾渾噩噩的小公司</div>
+          <div class="slideText slideLast">
+            <span class="slidespan"> 一轉也就80歲了</span>
+          </div>
+        </div>
         </div>
         <!-- 第四區:求職目標；期許 -->
         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
           4
         </div>
         <!-- 第五區:作品集 -->
-        <div class="tab-pane fade container" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+        <div class="tab-pane fade container" id="v-pills-settings" role="tabpanel"
+          aria-labelledby="v-pills-settings-tab">
           <div class="row justify-content-around">
-              <div class="card col-3 m-5" style="width: 18rem;">
-                <img src="https://picsum.photos/400/300/?random=1" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title"><a href="./login/login.html">作品</a></h5>
-                  <p class="card-text"></p>
-                </div>
+            <div class="card col-3 m-5" style="width: 18rem;">
+              <img src="https://picsum.photos/400/300/?random=1" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title"><a href="./login/login.html">作品</a></h5>
+                <p class="card-text"></p>
               </div>
-              <div class="card col-3 m-5" style="width: 18rem;">
-                <img src="https://picsum.photos/400/300/?random=1" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title"><a href="./login/login.html">作品</a></h5>
-                  <p class="card-text"></p>
-                </div>
+            </div>
+            <div class="card col-3 m-5" style="width: 18rem;">
+              <img src="https://picsum.photos/400/300/?random=1" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title"><a href="./login/login.html">作品</a></h5>
+                <p class="card-text"></p>
               </div>
-              <div class="card col-3 m-5" style="width: 18rem;">
-                <img src="https://picsum.photos/400/300/?random=1" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title"><a href="./login/login.html">作品</a></h5>
-                  <p class="card-text"></p>
-                </div>
+            </div>
+            <div class="card col-3 m-5" style="width: 18rem;">
+              <img src="https://picsum.photos/400/300/?random=1" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title"><a href="./login/login.html">作品</a></h5>
+                <p class="card-text"></p>
               </div>
-              <div class="card col-3 m-5" style="width: 18rem;">
-                <img src="https://picsum.photos/400/300/?random=1" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title"><a href="./login/login.html">作品</a></h5>
-                  <p class="card-text"></p>
-                </div>
+            </div>
+            <div class="card col-3 m-5" style="width: 18rem;">
+              <img src="https://picsum.photos/400/300/?random=1" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title"><a href="./login/login.html">作品</a></h5>
+                <p class="card-text"></p>
               </div>
-              <div class="card col-3 m-5" style="width: 18rem;">
-                <img src="https://picsum.photos/400/300/?random=1" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title"><a href="./login/login.html">作品</a></h5>
-                  <p class="card-text"></p>
-                </div>
+            </div>
+            <div class="card col-3 m-5" style="width: 18rem;">
+              <img src="https://picsum.photos/400/300/?random=1" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title"><a href="./login/login.html">作品</a></h5>
+                <p class="card-text"></p>
               </div>
-              <div class="card col-3 m-5" style="width: 18rem;">
-                <img src="https://picsum.photos/400/300/?random=1" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title"><a href="./login/login.html">作品</a></h5>
-                  <p class="card-text"></p>
-                </div>
+            </div>
+            <div class="card col-3 m-5" style="width: 18rem;">
+              <img src="https://picsum.photos/400/300/?random=1" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title"><a href="./login/login.html">作品</a></h5>
+                <p class="card-text"></p>
               </div>
+            </div>
           </div>
 
         </div>

@@ -240,3 +240,57 @@ cursor: ew-resize;
   100% {margin-top:-270px;}
 }
 /* 翻轉文字 */
+
+
+
+/* 跳出文字 */
+.slideBox{
+  height: 20px;
+  text-align: center;
+}
+.slideTitle{
+  text-align: center;
+  animation: showup 3s forwards;
+}
+.slideText {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.slideFirst {
+  animation: showup 7s 3000ms forwards;
+}
+
+.slideLast {
+  width:0px;
+  animation: reveal 7s forwards;
+}
+
+.slidespan {
+  margin-left:-355px;
+  animation: slidein 7s forwards;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:1;width:355px;}
+}
+/* 跳出文字 */

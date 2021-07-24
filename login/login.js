@@ -60,3 +60,6 @@ $(document).ready(function() {
   });
   
 });
+function back() {
+  window.history.back();
+}
