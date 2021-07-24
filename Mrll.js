@@ -46,7 +46,7 @@ let topRun = document.querySelector("#arrow"),
         dragElement.parents().on("mousemove touchmove", function (e) {
 
 
-          var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+          var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches.pageX;
 
           leftValue = moveX + posX - dragWidth;
 
