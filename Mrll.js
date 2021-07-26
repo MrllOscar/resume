@@ -117,4 +117,4 @@ function to() {
   document.location.href = "login/login.html";
 }
 
-new WOW().init();
+

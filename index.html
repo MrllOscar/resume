@@ -19,8 +19,8 @@
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous"></script>
   <!-- wow.js -->
-  <!-- <script src="./wow.min.js"></script> -->
-  <link rel="stylesheet" href="./animate.min.css">
+  <!-- <link rel="stylesheet" href="./animate.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <!-- 網站圖示 -->
   <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
 
@@ -45,17 +45,17 @@
       <div class="nav flex-column nav-pills position-fixed MrllNav p-0" id="v-pills-tab" role="tablist"
         aria-orientation="vertical">
         <button class="rounded-0 text-dark bg-danger nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-          data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"
-          title="關於我"><i class="fas fa-child"></i></button>
+          data-bs-target="#v-pills-home" type="button" role="tab"
+          title="關於我"><a href="#v-pills-tabContent" class="link-dark"><i class="fas fa-child"></i></a></button>
         <button class="rounded-0 text-dark bg-danger nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
           data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-          aria-selected="false" title="工作經歷"><i class="fas fa-book"></i></button>
+          title="工作經歷"><a href="#v-pills-tabContent" class="link-dark"><i class="fas fa-book"></i></a></button>
         <button class="rounded-0 text-dark bg-danger nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
           data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
-          aria-selected="false" title="求職目標"><i class="fas fa-coins"></i></button>
+          title="求職目標"><a href="#v-pills-tabContent" class="link-dark"><i class="fas fa-coins"></i></a></button>
         <button class="rounded-0 text-dark bg-danger nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
           data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings"
-          aria-selected="false" title="作品集"><i class="fas fa-diagnoses"></i></button>
+          title="作品集"><a href="#v-pills-tabContent" class="link-dark"><i class="fas fa-diagnoses"></i></a></button>
         <button class="rounded-0 text-dark bg-danger nav-link" onclick="to()" title="後台登入"><i
             class="fas fa-fingerprint"></i></button>
       </div>
@@ -92,6 +92,7 @@
           <img class="p-0" src="https://picsum.photos/1920/1080/?random=2">
 
           <h1 class="slideTitle experience">經歷</h1>
+          <!-- <h1 class="slideTitle experience">經歷</h1> -->
           <div class="slideBox">
             <div class="slideText slideFirst">花錢去的大企業公司</div>
             <div class="slideText slideLast">
@@ -341,7 +342,9 @@
       </div>
     </div>
   </div>
+  <script src="./wow.min.js"></script>
   <script src="Mrll.js"></script>
+  <script>new WOW().init();</script>
 </body>
 
 </html>
