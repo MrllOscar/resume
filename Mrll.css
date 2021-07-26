@@ -21,7 +21,9 @@ body{
 }
 /* navlink設定結束 */
 
-
+.card:hover{
+  animation: flipInY 1s ease-in ;
+}
 
 
 
