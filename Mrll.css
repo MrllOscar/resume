@@ -699,7 +699,7 @@ cursor: ew-resize;
     content: none;
   }
 }
-@media (max-width: 345px) {
+@media (max-width: 319px) {
   .MrllNav{
     display: flex;
     bottom:0;
