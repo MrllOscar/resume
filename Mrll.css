@@ -669,6 +669,9 @@ cursor: ew-resize;
   .MrllNav>button>a>*,.MrllNav>button>*{
     width: 2rem;
   }
+  .MrllNav>button>a>i,.MrllNav>button>i{
+    font-size: 1rem;
+  }
   .slideBox{
     height: auto;
   }
@@ -692,6 +695,7 @@ cursor: ew-resize;
     height: 40px;
     background-color: #dc3545!important ;
   }
+  
 }
 @media (max-width: 345px) {
   .MrllNav{
@@ -707,7 +711,7 @@ cursor: ew-resize;
     height: 45px;
   }
   #mrllArrow> a > i{
-    font-size: 1.4rem !important;
+    font-size: 1rem !important;
   }
 }
 /* 文末RWD */
