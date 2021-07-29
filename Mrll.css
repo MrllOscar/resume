@@ -19,6 +19,9 @@ body{
   margin: 0%;
   justify-content: center;
 }
+.MrllNav>button>a>i,.MrllNav>button>i{
+  font-size: 1.4rem;
+}
 /* navlink設定結束 */
 
 
@@ -650,13 +653,61 @@ cursor: ew-resize;
   }
   .MrllNav{
     right: auto;
-    top: 0;
-    justify-content: flex-end;
+    top: auto;
+    height: 40px;
+    width: 50px;
+    justify-content: flex-start;
     z-index: 5;
     opacity: 0.5;
+    position: fixed !important;
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
+  }
+  .MrllNav>button{
+    width: 62.5px;
+  }
+  .MrllNav>button>a>*,.MrllNav>button>*{
+    width: 2rem;
   }
   .slideBox{
     height: auto;
+  }
+  #arrow{
+    display: none;
+  }
+  #mrllArrow{
+    opacity: 0.5;
+    right: 0;
+    bottom: 0;
+  }
+  #mrllArrow> a > i{
+    color: #212529!important ;
+    font-size: 1rem !important;
+    vertical-align: 0;
+  }
+  #mrllArrow > a {
+    animation: none;
+    border-radius: 0% !important;
+    width: 62.5px;
+    height: 40px;
+    background-color: #dc3545!important ;
+  }
+}
+@media (max-width: 345px) {
+  .MrllNav{
+    display: flex;
+    bottom:0;
+    right: 0;
+    left: 0;
+    justify-content: flex-end;
+    flex-direction: column !important;
+  }
+  #mrllArrow > a {
+    width: 55px;
+    height: 45px;
+  }
+  #mrllArrow> a > i{
+    font-size: 1.4rem !important;
   }
 }
 /* 文末RWD */
